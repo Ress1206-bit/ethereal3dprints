@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+<div class="header" style="position: fixed; top: 0;">
+  <img width="70%" src="images/EtherealBanner3.png">
+</div>
+
+<div class="free3d" style="margin-top: 26vw;">
+    <div id="putIncode">
+        <h1>Free Subscriber 3d print</h1>
+        <h2>Enter Subscriber Code Here:</h2>
+        <div>
+            <form onsubmit="return false">
+            <input type="text" id="code" name="code">
+            <br>
+            <input onclick="unlock()" id="submit" type="submit" value="Unlock">
+            </form>
+        </div>
+    </div>
+    <div id="fillOutForm">
+        <h1 id="contactheader" style="font-size: 5.5vw; margin-bottom: 5vw;">Lets get your free 3d print!</h1> 
+            <form id="contactform" action="https://formsubmit.co/etherealcreations2@gmail.com" method="POST">
+        
+              <!-- <p id="header2contact" style="text-align: center; font-size: 5vw; font-weight: 700;">Answer these questions so I can send you your 3d print</p> -->
+        
+              <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            
+              <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+        
+            <input type="hidden" name="_next" value="https://pixle.netlify.app/" >
+        
+            
+            <input style="width: 70vw; font-size: 4vw; line-height: 6vw;" name="Name" type="text" id="name" placeholder="Name on Youtube">
+            <br>
+        
+            <input style="width: 70vw; font-size: 3.7vw; line-height: 6vw;" name="3dprint" type="text" id="3dprint" placeholder="What do you want me to 3d print for you">
+            <br>
+
+            <input style="width: 70vw; font-size: 4vw; line-height: 6vw;" name="address" type="text" id="address" placeholder="Shipping address">
+            <br>
+
+            <input style="width: 70vw; font-size: 4vw; line-height: 6vw;" name="address" type="text" id="communication" placeholder="Communication: Email or Phone#">
+            <br>
+
+            <button onclick="Thankyou()" id="submit" type="submit" style="font-size: 3.7vw; margin-top: 3vw; margin-bottom: 3vw;">Submit</button>
+
+            <p style="font-size: 4vw;">
+                Shipping will not take more than 10 days
+            </p>
+            <p style="font-size: 4vw;">
+                I will send updates on the 3d print to you by email or phone#
+            </p>
+             <o style="font-size: 2.7vw;">
+                Also I am not printing people some of the things I made below
+            </o>
+
+            </form>
+            <thankyou id="thankyou">Thank you for subscribing!!!</thankyou>
+    </div>
+</div>
+
+
+
+<div class="my3dprints">
+    <h1 id="someofmyprints" style="font-size: 6.2vw;">Some of my own 3d prints</h1>
+
+    <h3 style="margin: 5px;" class="name">RC Car</h3>
+    <img class="myprint" src="images/RC.jpg">
+    
+    <h3 class="name">Lock and Key</h3>
+    <img class="myprint" src="images/lockandkey.jpg">
+
+    <h3 class="name">RC Boat</h3>
+    <img class="myprint" src="images/boat.jpg">
+    
+    <h3 class="name">15 puzzle</h3>
+    <img class="myprint" src="images/15puzzle.jpg">
+
+    <h3 class="name">Gear Ratios</h3>
+    <img class="myprint" src="images/Gears.jpg">
+
+</div>
+
+</body>
+</html>
